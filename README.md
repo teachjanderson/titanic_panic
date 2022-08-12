@@ -11,11 +11,8 @@ Our project will be using machine learning to determine which variables have an 
 * Does class of passenger impact survival odds aboard the Titanic?
 * Can we achieve an machine learning accuracy rate above 80%?
 
-
-Information on Data Storage and Use of Systems for project
-We plan on using Postgres SQL to hold our data. 
-We will be using PPT to present our data.
-We will be using Tableu to make our dashboard.
+# Machine Learning Model, Database/Storage, and Use of Project Systems
+The project will use Postgres SQL to hold and manage our data along with SQL to run queries prior to using our Machine Learning model. The final presentation will make use of Microsoft Powerpoint / Google Slides and Tableau. 
 
 # Communication Protocols 
-* Slack, Zoom, Github
+The team communication protocols include briefing before and after each class session along with agreed upon norms for communication including Slack for sharing links, general requests, and support questions. Our team will meet live on Zoom using created channel and using class breakout rooms. The project deliverables are hosted on Github using branches and approving merges as deliverables are completed. 
