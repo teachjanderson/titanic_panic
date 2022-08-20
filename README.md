@@ -30,7 +30,7 @@ After cleaning the data for the model, the final dataset looked like the followi
 
 Our initial model makes use of logistic regression. This model takes in the various features such as age, boarding class, and gender to calculate the likelihood that each person survives based on those features. Our training set matches the image above. We focused on the features of gender and class and our preliminary analysis revealed a strong correlation between those and survivability. To test this, we split the data into training and testing sets checking against the survived category. 
 
-<p align="center"><img src="https://github.com/teachjanderson/titanic_panic/blob/Tyler/Report_Images/Condensed.png" width="600" />
+<p align="center"><img src="https://github.com/teachjanderson/titanic_panic/blob/Tyler/Report_Images/Condensed.png" width="800" />
 
 ## Database/Storage
 
