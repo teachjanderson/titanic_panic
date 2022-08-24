@@ -1,7 +1,7 @@
 ## Titanic_Panic
 
 # Machine Learning of Titanic Data
-Our project will be using machine learning to determine which variables have an impact on survival rates aboard the Titanic. The Reason we selected this as our project is due to our interest in the historical event and the dataset included a variety of information to analyze in our machine learning model. Our data source is from [Kaggle](www.kaggle.com/competitions/titanic/data). The dataset is split into multiple CSV files and will require merging via SQL Joins. 
+Our project uses machine learning to determine survival rates aboard the Titanic. We selected this dataset based on our interest in the historical event and using the detailed information to make machine learning predictions. Our data source is from [Kaggle](https://www.kaggle.com/competitions/titanic/data) and includes 12 columns of nearly 900 rows about individual passengers. For each passenger, there is information about their survival status, age, gender, class, and even the fare he or she paid for the trip. We focused on the variables of gender and class to predict the likelihood of survival. The original dataset is split into multiple CSV files and required merging via SQL Joins. 
 
 # Hypothesis and Questions
 * Hypothesis: The class of passenger impacts the survival rate aboard the Titanic.
@@ -14,7 +14,7 @@ Our project will be using machine learning to determine which variables have an 
 # Preliminary Processing, Machine Learning Model, Database/Storage, and Use of Project Systems
 
 ## Preliminary Processing
-The initial data processing included checking the values in the dataset. There were 891 rows across a variety of columns as pictured below. The key target of the learning was the survived category to check against the other variables/features with the main focus gender and boarding class. The gender column required using encoding to split into male and female and using the three boarding classes as 1, 2, and 3. 
+The initial data processing included checking the values in the dataset. There were 891 rows across a variety of columns as pictured below. The key target of the learning was the survived category to check against the other variables/features with the main focus gender and boarding class. Based on our preliminary analysis, we nocited a greater number of deaths for males than females and those in the lower cabins. We decided to use gender and class as our features based on these observations.  The gender column required using encoding to split into male and female and using the three boarding classes as 1, 2, and 3. 
 
 <p align="center"><img src="https://github.com/teachjanderson/titanic_panic/blob/Tyler/Report_Images/Train_df.png" width="600" />
 
