@@ -1,7 +1,7 @@
 ## Titanic_Panic
 
 # Machine Learning of Titanic Data
-Our project will be using machine learning to determine which variables have an impact on survival rates aboard the Titanic. The Reason we selected this as our project is due to our interest in the historical event and the dataset included a variety of information to analyze in our machine learning model. Our data source is from [Kaggle](www.kaggle.com/competitions/titanic/data). The dataset is split into multiple CSV files and will require merging via SQL Joins. 
+Our project uses machine learning to determine survival rates aboard the Titanic. We selected this dataset based on our interest in the historical event and using the detailed information to make machine learning predictions. Our data source is from [Kaggle](https://www.kaggle.com/competitions/titanic/data) and includes 12 columns of nearly 900 rows about individual passengers. For each passenger, there is information about their survival status, age, gender, class, and even the fare he or she paid for the trip. We focused on the variables of gender and class to predict the likelihood of survival. The original dataset is split into multiple CSV files and required merging via SQL Joins. 
 
 # Hypothesis and Questions
 * Hypothesis: The class of passenger impacts the survival rate aboard the Titanic.
@@ -11,8 +11,42 @@ Our project will be using machine learning to determine which variables have an 
 * Does class of passenger impact survival odds aboard the Titanic?
 * Can we achieve an machine learning accuracy rate above 80%?
 
-# Machine Learning Model, Database/Storage, and Use of Project Systems
-The project will use Postgres SQL to hold and manage our data along with SQL to run queries prior to using our Machine Learning model. The final presentation will make use of Microsoft Powerpoint / Google Slides and Tableau. 
+# Preliminary Processing, Machine Learning Model, Database/Storage, and Use of Project Systems
+
+## Preliminary Processing
+The initial data processing included checking the values in the dataset. There were 891 rows across a variety of columns as pictured below. The key target of the learning was the survived category to check against the other variables/features with the main focus gender and boarding class. Based on our preliminary analysis, we nocited a greater number of deaths for males than females and those in the lower cabins. We decided to use gender and class as our features based on these observations.  The gender column required using encoding to split into male and female and using the three boarding classes as 1, 2, and 3. 
+
+<p align="center"><img src="https://github.com/teachjanderson/titanic_panic/blob/Tyler/Report_Images/Train_df.png" width="600" />
+
+After reviewing the initial data, we checked for null values across the dataframe. The cabin, embarked, and age categories had the most null values. In the final analysis, we removed the embarked and cabin columns. For age, we ran different models. One that included the age column with the mean age replacing any null values and another that removed the null values from the dataset. 
+
+<p align="center"><img src="https://github.com/teachjanderson/titanic_panic/blob/Tyler/Report_Images/Null_Values.png" width="600" />
+
+After cleaning the data for the model, the final dataset looked like the following:
+
+<p align="center"><img src="https://github.com/teachjanderson/titanic_panic/blob/Tyler/Report_Images/Clean_df.png" width="600" />
+
+## Machine Learning Model
+
+Our initial model makes use of logistic regression. This model takes in the various features such as age, boarding class, and gender to calculate the likelihood that each person survives based on those features. Our training set matches the image above. We focused on the features of gender and class and our preliminary analysis revealed a strong correlation between those and survivability. To test this, we split the data into training and testing sets checking against the survived category. 
+
+<p align="center"><img src="https://github.com/teachjanderson/titanic_panic/blob/Tyler/Report_Images/Condensed.png" width="800" />
+
+## Limitations and Benefits
+
+One of the main limitations of our model is the likelihood of overfitting given our limited variables and dataset size. Our initial accuracy scores can be seen below. In all likelihood, our model may be less accurate in a real life setting where many more variables and factors are at play. Other models which include neural networks may have better accuracy and able to encompass more features than our model. One benefit of this model is we can potentially upscale it rarely easily with more data or features to check for improved accuracy. The uniqueness of this dataset is its historical accuracy and social factors. Issues such as gender, age, and class of passengers can intuitvely be understood in their correlation of survivability. 
+
+<p align="center"><img src="https://github.com/teachjanderson/titanic_panic/blob/Tyler/Report_Images/Screen%20Shot%202022-08-20%20at%202.31.50%20PM.png" width="800" />
+
+## Database/Storage
+
+The project will use SQLite to hold and manage our data along with some members making use of Postgres SQL to run queries prior to using our Machine Learning model. The final presentation will make use of Microsoft Powerpoint / Google Slides and Tableau. The link to our Google Slides can be found [here](https://docs.google.com/presentation/d/e/2PACX-1vSARBSO_xyOQqv3Wb4MGWp5oeDXIu8JB_nmKE-kFPynPddJQAdttd75yul_AkW9BFr50BoTmvyVGDm2/pub?start=false&loop=false&delayms=60000)
+
+The relationships between our tables align on the boarding class and gender columns as seen in the ERD Below. To initiate the connection to SQLite, we embedded code into our notebook where necessary. 
+
+<p align="center"><img src="https://github.com/teachjanderson/titanic_panic/blob/Tyler/Report_Images/ERD_Titanic.png" width="600" />
+
+<p align="center"><img src="https://github.com/teachjanderson/titanic_panic/blob/Tyler/Report_Images/Connect_Database.png" width="600" />
 
 # Communication Protocols 
-The team communication protocols include briefing before and after each class session along with agreed upon norms for communication including Slack for sharing links, general requests, and support questions. Our team will meet live on Zoom using created channel and using class breakout rooms. The project deliverables are hosted on Github using branches and approving merges as deliverables are completed. 
+The team communication protocols include briefing before and after each class session along with agreed upon norms for communication including Slack for sharing links, general requests, and support questions. Our team will meet live on Zoom using created channel and using class breakout rooms. The project deliverables are hosted on Github using branches and approving merges as deliverables are completed. Each team member has their own designated branch and we've made use of Google Colaboratory during shared work times involving coding. 
