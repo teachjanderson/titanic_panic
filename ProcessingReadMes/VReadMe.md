@@ -16,6 +16,6 @@ We removed two columns (Passenger Name and ticket number) due to the vast amount
 points. Four more columns that held no relevance to our hypotheses were removed: sibsp (# of siblings / spouses aboard the Titanic), parch (# of parents / children aboard the Titanic), embarked (Port of Embarkation), and fare (passenger fare). Passenger fare was removed due to its redundancy with the class variable. 
 
 ## Data Split
-Our dateset was pre-split into a train and test dataset. The test contained data on 418 passengers and the train held data on the remaining 891 passengers.
+Our dateset was pre-split into a train and test dataset by the data source. The test set contained data on 418 passengers and the train set held data on the remaining 891 passengers.
 
 
