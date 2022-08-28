@@ -54,7 +54,7 @@ Our model makes use of logistic regression. This model takes in the various feat
 
 ## Database/Storage
 
-The project will use SQLite to hold and manage our data along with some members making use of Postgres SQL to run queries prior to using our Machine Learning model. The final presentation will make use of Microsoft Powerpoint / Google Slides and Tableau. The link to our Google Slides can be found [here](https://docs.google.com/presentation/d/e/2PACX-1vSARBSO_xyOQqv3Wb4MGWp5oeDXIu8JB_nmKE-kFPynPddJQAdttd75yul_AkW9BFr50BoTmvyVGDm2/pub?start=false&loop=false&delayms=60000)
+The project will use SQLite to hold and manage our data along with some members making use of Postgres SQL to run queries prior to using our Machine Learning model. The final presentation will make use of Microsoft Powerpoint / Google Slides and Tableau. The link to our Google Slides can be found [here](https://docs.google.com/presentation/d/e/2PACX-1vSARBSO_xyOQqv3Wb4MGWp5oeDXIu8JB_nmKE-kFPynPddJQAdttd75yul_AkW9BFr50BoTmvyVGDm2/pub?start=false&loop=false&delayms=60000).
 
 The relationships between our tables align on the boarding class and gender columns as seen in the ERD Below. To initiate the connection to SQLite, we embedded code into our notebook where necessary. 
 
@@ -62,5 +62,7 @@ The relationships between our tables align on the boarding class and gender colu
 
 <p align="center"><img src="https://github.com/teachjanderson/titanic_panic/blob/Tyler/Report_Images/SQLConnection.png" width="600" />
 
-# Communication Protocols 
+# Communication Protocols and Presentation
 The team communication protocols include briefing before and after each class session along with agreed upon norms for communication including Slack for sharing links, general requests, and support questions. Our team will meet live on Zoom using created channel and using class breakout rooms. The project deliverables are hosted on Github using branches and approving merges as deliverables are completed. Each team member has their own designated branch and we've made use of Google Colaboratory during shared work times involving coding. 
+
+Our presentation will include a Tableau interactive dashboard which lets viewers interact with survival rates based on category and the outputs of our machine learning model. The storyboard for this element can be found [here](https://docs.google.com/presentation/d/e/2PACX-1vSARBSO_xyOQqv3Wb4MGWp5oeDXIu8JB_nmKE-kFPynPddJQAdttd75yul_AkW9BFr50BoTmvyVGDm2/pub?start=false&loop=false&delayms=60000&slide=id.g146de499094_2_0).
