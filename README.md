@@ -26,27 +26,33 @@ After cleaning the data for the model, the final dataset looked like the followi
 
 <p align="center"><img src="https://github.com/teachjanderson/titanic_panic/blob/Tyler/Report_Images/Clean_df.png" width="600" />
 
-## Machine Learning Model
-
-Our initial model makes use of logistic regression. This model takes in the various features such as boarding class, and gender to calculate the likelihood that each person survives based on those features. Our training set matches the image above. We focused on the features of gender and class and our preliminary analysis revealed a strong correlation between those and survivability. To test this, we split the data into training and testing sets checking against the survived category. 
+In deciding which features to use in our model, we completed further analysis to compare rates of survival based on the different categories. In the images below, 0 represents non-survival and 1 represents survived for the passengers. We observed the categories of gender and boarding class had unique trends worth further exploration. After discussion of this analysis, we decided to use these as the primary features of our machine learning model. 
 
 <p align="center"><img src="https://github.com/teachjanderson/titanic_panic/blob/Tyler/Report_Images/Condensed.png" width="800" />
 
-## Limitations and Benefits
+# Machine Learning Model
 
-One of the main limitations of our model is the likelihood of overfitting given our limited variables and dataset size. Our initial accuracy scores can be seen below. In all likelihood, our model may be less accurate in a real life setting where many more variables and factors are at play. Other models which include neural networks may have better accuracy and able to encompass more features than our model. One benefit of this model is we can potentially upscale it rarely easily with more data or features to check for improved accuracy. The uniqueness of this dataset is its historical accuracy and social factors. Issues such as gender, age, and class of passengers can intuitvely be understood in their correlation of survivability. 
+## Model Choice and Limitations / Benefits
+
+Our model makes use of logistic regression. This model takes in the various features such as boarding class and gender to calculate the likelihood that each person survives based on those features. One of the main limitations of our model is the likelihood of overfitting given our limited variables and dataset size. Our initial accuracy scores can be seen below after three iterations. In all likelihood, our model may be less accurate in a real life setting where many more variables and factors are at play. Other models which include neural networks may have better accuracy and able to encompass more features than our model. Our first iteration achieved slightly under our 80% accuracy goal, with our second failing due to overfitting and our third iteration achieving above the 80% goal. One benefit of this model is we can potentially upscale it rarely easily with more data or features to check for improved accuracy. The uniqueness of this dataset is its historical accuracy and social factors. Issues such as gender, age, and class of passengers can intuitvely be understood in their correlation of survivability. 
 
 <p align="center"><img src="https://github.com/teachjanderson/titanic_panic/blob/Tyler/Report_Images/Screen%20Shot%202022-08-20%20at%202.31.50%20PM.png" width="800" />
 
+<p align="center"><img src="https://github.com/teachjanderson/titanic_panic/blob/Tyler/Report_Images/ML1.png" width="800" />
+
+<p align="center"><img src="https://github.com/teachjanderson/titanic_panic/blob/Tyler/Report_Images/ML8.png" width="800" />
+
 ## Database/Storage
 
-The project will use SQLite to hold and manage our data along with some members making use of Postgres SQL to run queries prior to using our Machine Learning model. The final presentation will make use of Microsoft Powerpoint / Google Slides and Tableau. The link to our Google Slides can be found [here](https://docs.google.com/presentation/d/e/2PACX-1vSARBSO_xyOQqv3Wb4MGWp5oeDXIu8JB_nmKE-kFPynPddJQAdttd75yul_AkW9BFr50BoTmvyVGDm2/pub?start=false&loop=false&delayms=60000)
+The project will use SQLite to hold and manage our data along with some members making use of Postgres SQL to run queries prior to using our Machine Learning model. The final presentation will make use of Microsoft Powerpoint / Google Slides and Tableau. The link to our Google Slides can be found [here](https://docs.google.com/presentation/d/e/2PACX-1vSARBSO_xyOQqv3Wb4MGWp5oeDXIu8JB_nmKE-kFPynPddJQAdttd75yul_AkW9BFr50BoTmvyVGDm2/pub?start=false&loop=false&delayms=60000).
 
 The relationships between our tables align on the boarding class and gender columns as seen in the ERD Below. To initiate the connection to SQLite, we embedded code into our notebook where necessary. 
 
 <p align="center"><img src="https://github.com/teachjanderson/titanic_panic/blob/Tyler/Report_Images/ERD_Titanic.png" width="600" />
 
-<p align="center"><img src="https://github.com/teachjanderson/titanic_panic/blob/Tyler/Report_Images/Connect_Database.png" width="600" />
+<p align="center"><img src="https://github.com/teachjanderson/titanic_panic/blob/Tyler/Report_Images/SQLConnection.png" width="600" />
 
-# Communication Protocols 
+# Communication Protocols and Presentation
 The team communication protocols include briefing before and after each class session along with agreed upon norms for communication including Slack for sharing links, general requests, and support questions. Our team will meet live on Zoom using created channel and using class breakout rooms. The project deliverables are hosted on Github using branches and approving merges as deliverables are completed. Each team member has their own designated branch and we've made use of Google Colaboratory during shared work times involving coding. 
+
+Our presentation will include a Tableau interactive dashboard which lets viewers interact with survival rates based on category and the outputs of our machine learning model. The storyboard for this element can be found [here](https://docs.google.com/presentation/d/e/2PACX-1vSARBSO_xyOQqv3Wb4MGWp5oeDXIu8JB_nmKE-kFPynPddJQAdttd75yul_AkW9BFr50BoTmvyVGDm2/pub?start=false&loop=false&delayms=60000&slide=id.g146de499094_2_0).
