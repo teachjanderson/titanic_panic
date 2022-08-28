@@ -26,11 +26,7 @@ After cleaning the data for the model, the final dataset looked like the followi
 
 <p align="center"><img src="https://github.com/teachjanderson/titanic_panic/blob/Tyler/Report_Images/Clean_df.png" width="600" />
 
-## Machine Learning Model
-
-Our initial model makes use of logistic regression. This model takes in the various features such as boarding class, and gender to calculate the likelihood that each person survives based on those features. Our training set matches the image above. We focused on the features of gender and class and our preliminary analysis revealed a strong correlation between those and survivability. To test this, we split the data into training and testing sets checking against the survived category. 
-
-<p align="center"><img src="https://github.com/teachjanderson/titanic_panic/blob/Tyler/Report_Images/Condensed.png" width="800" />
+# Machine Learning Model
 
 ## Descripton of Features
 Our original dataset contained twelve different features. We chose to focus on and keep four of these features for our machine learning model. Those 
@@ -45,6 +41,12 @@ Several columns from the original dataset were removed due to the presence of a 
 
 ## Data Split
 Our dateset was pre-split into a train and test dataset by the data source. The test set contained data on 418 passengers and the train set held data on the remaining 891 passengers.
+  
+## Model Choice and Implementation
+
+Our initial model makes use of logistic regression. This model takes in the various features such as boarding class, and gender to calculate the likelihood that each person survives based on those features. Our training set matches the image above. We focused on the features of gender and class and our preliminary analysis revealed a strong correlation between those and survivability. To test this, we split the data into training and testing sets checking against the survived category. 
+
+<p align="center"><img src="https://github.com/teachjanderson/titanic_panic/blob/Tyler/Report_Images/Condensed.png" width="800" />
 
 ## Limitations and Benefits
 
