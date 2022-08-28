@@ -34,9 +34,13 @@ In deciding which features to use in our model, we completed further analysis to
 
 ## Model Choice and Limitations / Benefits
 
-Our model makes use of logistic regression. This model takes in the various features such as boarding class and gender to calculate the likelihood that each person survives based on those features. One of the main limitations of our model is the likelihood of overfitting given our limited variables and dataset size. Our initial accuracy scores can be seen below. In all likelihood, our model may be less accurate in a real life setting where many more variables and factors are at play. Other models which include neural networks may have better accuracy and able to encompass more features than our model. One benefit of this model is we can potentially upscale it rarely easily with more data or features to check for improved accuracy. The uniqueness of this dataset is its historical accuracy and social factors. Issues such as gender, age, and class of passengers can intuitvely be understood in their correlation of survivability. 
+Our model makes use of logistic regression. This model takes in the various features such as boarding class and gender to calculate the likelihood that each person survives based on those features. One of the main limitations of our model is the likelihood of overfitting given our limited variables and dataset size. Our initial accuracy scores can be seen below after three iterations. In all likelihood, our model may be less accurate in a real life setting where many more variables and factors are at play. Other models which include neural networks may have better accuracy and able to encompass more features than our model. Our first iteration achieved slightly under our 80% accuracy goal, with our second failing due to overfitting and our third iteration achieving above the 80% goal. One benefit of this model is we can potentially upscale it rarely easily with more data or features to check for improved accuracy. The uniqueness of this dataset is its historical accuracy and social factors. Issues such as gender, age, and class of passengers can intuitvely be understood in their correlation of survivability. 
 
 <p align="center"><img src="https://github.com/teachjanderson/titanic_panic/blob/Tyler/Report_Images/Screen%20Shot%202022-08-20%20at%202.31.50%20PM.png" width="800" />
+
+<p align="center"><img src="https://github.com/teachjanderson/titanic_panic/blob/Tyler/Report_Images/ML1.png" width="800" />
+
+<p align="center"><img src="https://github.com/teachjanderson/titanic_panic/blob/Tyler/Report_Images/ML8.png" width="800" />
 
 ## Database/Storage
 
