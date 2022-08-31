@@ -32,7 +32,7 @@ In deciding which features to use in our model, we completed further analysis to
 
 # Machine Learning Model
 
-## Descripton of Features
+## Description of Features
 Our original dataset contained twelve different features. We chose to focus on and keep four of these features for our machine learning model. Those 
 features were passenger ID, whether the passenger survived or not, passenger gender, and the economic class of each passenger. For this project, our team
 wanted to see if we were able to predict survival of passengers aboard the Titanic based on passenger gender and economic class. These specific features
