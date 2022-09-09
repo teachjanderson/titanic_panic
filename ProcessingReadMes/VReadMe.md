@@ -48,4 +48,28 @@ From the image we can see that two columns were missing a significant amount of 
 and the cabin number of each passenger as there were too many missing rows and we felt that data was not relevant to our study.
 We removed two columns (Passenger Name and ticket number) due to the vast amount of unique values. The name of passengers is a string variable and is unable to pass through the machine learning model. Ticket number was also removed as each ticket number was unique to the passenger and would skew the data with that many unique data
 points. Four more columns that held no relevance to our hypotheses were removed: sibsp (# of siblings / spouses aboard the Titanic), parch (# of parents / children aboard the Titanic), embarked (Port of Embarkation), and fare (passenger fare). Passenger fare was removed due to its redundancy with the class variable. 
+  
+ ## Data Split
+Our dateset was pre-split into a train and test dataset by the data source. The test set contained data on 418 passengers and the train set held data on the remaining 891 passengers.
+
+## Model Choice and Limitations / Benefits
+
+Our model makes use of logistic regression. This model takes in the various features such as boarding class and gender to calculate the likelihood that each person survives based on those features. One of the main limitations of our model is the likelihood of overfitting given our limited variables and dataset size. Our initial accuracy scores can be seen below after three iterations. In all likelihood, our model may be less accurate in a real life setting where many more variables and factors are at play. Other models which include neural networks may have better accuracy and able to encompass more features than our model. Our first iteration achieved slightly under our 80% accuracy goal, with our second failing due to overfitting and our third iteration achieving above the 80% goal. One benefit of this model is we can potentially upscale it rarely easily with more data or features to check for improved accuracy. The uniqueness of this dataset is its historical accuracy and social factors. Issues such as gender, age, and class of passengers can intuitvely be understood in their correlation of survivability. 
+
+<p align="center"><img src="https://github.com/teachjanderson/titanic_panic/blob/Tyler/Report_Images/Screen%20Shot%202022-08-20%20at%202.31.50%20PM.png" width="800" />
+
+<p align="center"><img src="https://github.com/teachjanderson/titanic_panic/blob/Tyler/Report_Images/ML1.png" width="800" />
+
+<p align="center"><img src="https://github.com/teachjanderson/titanic_panic/blob/Tyler/Report_Images/ML8.png" width="800" />
+
+## Database/Storage
+
+The project will use SQLite to hold and manage our data along with some members making use of Postgres SQL to run queries prior to using our Machine Learning model. The final presentation will make use of Microsoft Powerpoint / Google Slides and Tableau. The link to our Google Slides can be found [here](https://docs.google.com/presentation/d/e/2PACX-1vSARBSO_xyOQqv3Wb4MGWp5oeDXIu8JB_nmKE-kFPynPddJQAdttd75yul_AkW9BFr50BoTmvyVGDm2/pub?start=false&loop=false&delayms=60000).
+
+The relationships between our tables align on the boarding class and gender columns as seen in the ERD Below. To initiate the connection to SQLite, we embedded code into our notebook where necessary. 
+
+<p align="center"><img src="https://github.com/teachjanderson/titanic_panic/blob/Tyler/Report_Images/ERD_Titanic.png" width="600" />
+
+<p align="center"><img src="https://github.com/teachjanderson/titanic_panic/blob/Tyler/Report_Images/SQLConnection.png" width="600" />
+
 
